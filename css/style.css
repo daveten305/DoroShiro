@@ -34,6 +34,11 @@ header {
   align-items: center;
   background-color: navajowhite;
 }
+header .main-nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
 #logo {
   flex: 0.1;
 }
@@ -110,5 +115,5 @@ footer ul {
 }
 footer a {
   text-decoration: none;
-  color: #000;
+  line-height: .8px;
 }
