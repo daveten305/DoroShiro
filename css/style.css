@@ -1,0 +1,98 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+  margin: 10px auto;
+  max-width: 1050px;
+
+}
+p {
+  /* background-color: aqua; */
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+body {
+@media (max-width: 600px) { 
+  background-color:red;
+} 
+@media (min-width: 601px) and (max-width: 1000px) {
+ background-color: blue; 
+}
+@media (max-width: 1001px) {
+  background-color: green;
+}
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+ 
+/* header  */
+header{
+  display: flex;
+  align-items: center;
+  /* background-color: whitesmoke; */
+  background-color: navajowhite;
+}
+#logo {
+  flex: .1;
+  /* padding: 10px; */
+  
+}
+.logo-img {
+  border-radius: 50px;
+}
+nav  ul {
+  /* flex: 3; */
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+nav {
+  flex: 1;
+}
+nav ul li {
+  font-size: 25px;
+}
+/* banner */
+.banner {
+  
+}
+.fav-deal {
+  display: flex;
+}
+h5 {
+  text-align: center;
+}
+.about-us {
+  padding: 30px  50px;
+  line-height: 30px;
+  justify-content: space-evenly;
+  background-color: navajowhite;
+  margin: 15px 2px 90px 80px;
+}
+.title-menu {
+  text-align: center;
+  background-color: navajowhite;
+  padding: 10px;
+  margin-top: -40px;
+}
+.first-menu, .second-menu {
+  display: flex;
+  margin-top: 40px;
+}
+.first-one, .first-second, .first-third {
+  height: 280px;
+  width: 305px;
+  justify-content: space-between;
+  width: 28vw;
+}
+.one, .two, .three {
+  border: 1px solid black;
+}
+.card_caption {
+  text-align: center;
+}
