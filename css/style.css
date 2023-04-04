@@ -3,50 +3,44 @@
 /*******************************************/
 
 /* Box Model Hack */
-*{
+* {
   box-sizing: border-box;
   margin: 10px auto;
   max-width: 1050px;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-}
-p {
-  /* background-color: aqua; */
-}
 /******************************************
 /* LAYOUT
 /*******************************************/
 body {
-@media (max-width: 600px) { 
-  background-color:red;
-} 
-@media (min-width: 601px) and (max-width: 1000px) {
- background-color: blue; 
-}
-@media (max-width: 1001px) {
-  background-color: green;
-}
+  @media (max-width: 600px) {
+    background-color: red;
+  }
+  @media (min-width: 601px) and (max-width: 1000px) {
+    background-color: blue;
+  }
+  @media (max-width: 1001px) {
+    background-color: green;
+  }
 }
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
- 
+
 /* header  */
-header{
+header {
   display: flex;
   align-items: center;
-  /* background-color: whitesmoke; */
   background-color: navajowhite;
 }
 #logo {
-  flex: .1;
-  /* padding: 10px; */
-  
+  flex: 0.1;
 }
 .logo-img {
   border-radius: 50px;
 }
-nav  ul {
-  /* flex: 3; */
+nav ul {
   display: flex;
   list-style: none;
   justify-content: space-between;
@@ -59,16 +53,22 @@ nav ul li {
 }
 /* banner */
 .banner {
-  
+  margin-top: 30px;
 }
-.fav-deal {
+
+ .fav-deal {
   display: flex;
+  align-items: center;
+}
+.fav-menu {
+  margin-top: -40px;
+  /* margin-bottom: -20px; */
 }
 h5 {
   text-align: center;
 }
 .about-us {
-  padding: 30px  50px;
+  padding: 15px 45px;
   line-height: 30px;
   justify-content: space-evenly;
   background-color: navajowhite;
@@ -80,19 +80,31 @@ h5 {
   padding: 10px;
   margin-top: -40px;
 }
-.first-menu, .second-menu {
+.first-menu,
+.second-menu {
   display: flex;
   margin-top: 40px;
 }
-.first-one, .first-second, .first-third {
+.first-one,
+.first-second,
+.first-third {
   height: 280px;
   width: 305px;
   justify-content: space-between;
   width: 28vw;
+  margin: 0 2px;
 }
-.one, .two, .three {
+.one,
+.two,
+.three {
   border: 1px solid black;
 }
 .card_caption {
   text-align: center;
+}
+footer ul {
+  margin-top: 30px;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
 }
