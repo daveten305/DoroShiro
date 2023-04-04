@@ -10,23 +10,23 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/******************************************
-/* LAYOUT
-/*******************************************/
+/* *****************************************
+     LAYOUT
+ ***************************************** */
 body {
   @media (max-width: 600px) {
     background-color: red;
   }
-  @media (min-width: 601px) and (max-width: 1000px) {
+  @media (min-width:601px) and (max-width:1000px) {
     background-color: blue;
   }
-  @media (max-width: 1001px) {
+  @media (max-width:1001px) {
     background-color: green;
   }
 }
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/
+/* **************************************** 
+      ADDITIONAL STYLES 
+ ***************************************** */
 
 /* header  */
 header {
@@ -64,7 +64,7 @@ nav ul li {
   margin-top: -40px;
   /* margin-bottom: -20px; */
 }
-h5 {
+h4 {
   text-align: center;
 }
 .about-us {
@@ -72,7 +72,7 @@ h5 {
   line-height: 30px;
   justify-content: space-evenly;
   background-color: navajowhite;
-  margin: 15px 2px 90px 80px;
+  margin: 15px 2px 70px 80px;
 }
 .title-menu {
   text-align: center;
@@ -91,7 +91,7 @@ h5 {
   height: 280px;
   width: 305px;
   justify-content: space-between;
-  width: 28vw;
+  width: 26vw;
   margin: 0 2px;
 }
 .one,
@@ -107,4 +107,8 @@ footer ul {
   display: flex;
   list-style: none;
   justify-content: space-around;
+}
+footer a {
+  text-decoration: none;
+  color: #000;
 }
